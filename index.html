@@ -1,94 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annie | Discord Bot</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <style>
-        html {
-            box-sizing: border-box;
-            -webkit-font-smoothing: antialiased;
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            color: whitesmoke;
-            width: 100%;
-        }
-
-        .link {
-            color: #212022;
-            text-decoration: none;
-            font-weight: bold;
-            padding-inline: 18px;
-            padding-block: 7px;
-            background-color: #FFF;
-            border-radius: 10px;
-        }
-
-        .block {
-            background-color: #29282b;
-            width: 100%;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 16px;
-        }
-
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-
-        .description {
-            padding: 0 20px;
-        }
-
-        @media only screen and (min-width: 767px) {
-            .block {
-                max-width: 500px;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Muri - Your Discord Music Bot</title>
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background: #121212; /* Dark background for a sleek look */
+                color: #fff;
+                line-height: 1.6;
             }
-        }
-    </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQXEH1X1PE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-FQXEH1X1PE');
-    </script>
-</head>
-
-<body>
-    <div class="block">
-        <a href="https://anniemusic.app" target="_blank">
-            <img class="avatar"
-                src="https://avatars.githubusercontent.com/u/63664498?s=400&u=27bb4625ca448b122077efc3babf39da990a40f8&v=4">
-        </a>
-        <p class="description">Get grooving with your favorite songs! Annie fetches songs on all supported platforms,
-            making sharing easier and fun. Say goodbye to search!</p>
-        <a class="link" href="https://discordapp.com/api/oauth2/authorize?scope=bot&client_id=934526853153165342">Invite bot
-        </a>
-    </div>
-</body>
-
+            .container {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+            }
+            .main-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh; /* Full viewport height */
+                font-size: 16px;
+            }
+            .content-box {
+                max-width: 600px;
+                margin: 20px;
+                background: #1c1c1c; /* Consistent dark theme */
+                padding: 40px;
+                box-shadow: 0px 0px 20px rgba(255, 150, 136, 0.5); /* Futuristic glow effect */
+                border-radius: 10px; /* Soft rounded corners */
+                display: flex;
+                flex-direction: column;
+            }
+            .welcome {
+                margin-top: -40px;
+                text-align: center;
+                color: rgb(
+                    255,
+                    150,
+                    136
+                ); /* Bright cyan for a futuristic feel */
+                margin-bottom: 10px;
+            }
+            .button {
+                display: block;
+                width: 100%;
+                padding: 15px;
+                text-align: center;
+                background: rgb(255, 150, 136);
+                color: #1c1c1c;
+                border: none;
+                cursor: pointer;
+                font-size: 18px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+            .button:hover {
+                background-color: rgba(255, 150, 136, 0.8);
+            }
+            .description {
+                text-align: justify;
+            }
+            .logo {
+                margin-top: -60px;
+                object-fit: scale-down;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="main-content">
+            <div class="content-box">
+                <img
+                    src="https://res.cloudinary.com/anniemusic/image/upload/v1715123528/annie-logo-white_stroke_wh39e2.png"
+                    class="logo"
+                />
+                <h1 class="welcome">Welcome to Muri, Your Discord Music Bot</h1>
+                <p class="description">
+                    Muri is your advanced bot for fetching streaming links for
+                    any song directly in Discord. Effortlessly connect to the
+                    music world with Muri on your server!
+                </p>
+                <button class="button">Add Muri to Discord</button>
+            </div>
+        </section>
+    </body>
 </html>
